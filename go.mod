@@ -1,4 +1,4 @@
-module github.com/Ullaakut/nmap/v3
+module github.com/analog-substance/nmap/v3
 
 go 1.20
 

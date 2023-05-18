@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/Ullaakut/nmap/v3"
+	"github.com/analog-substance/nmap/v3"
 )
 
 func main() {

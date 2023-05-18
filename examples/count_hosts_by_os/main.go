@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Ullaakut/nmap/v3"
-	osfamily "github.com/Ullaakut/nmap/v3/pkg/osfamilies"
+	"github.com/analog-substance/nmap/v3"
+	osfamily "github.com/analog-substance/nmap/v3/pkg/osfamilies"
 )
 
 func main() {

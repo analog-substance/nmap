@@ -8,18 +8,18 @@
     <a href="LICENSE">
         <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" />
     </a>
-    <a href="https://pkg.go.dev/github.com/Ullaakut/nmap/v3"><img src="https://pkg.go.dev/badge/github.com/Ullaakut/nmap/v3" alt="PkgGoDev github.com/Ullaakut/nmap/v3"></a>
-    <a href="https://goreportcard.com/report/github.com/Ullaakut/nmap/v3">
-        <img src="https://goreportcard.com/badge/github.com/Ullaakut/nmap/v3">
+    <a href="https://pkg.go.dev/github.com/analog-substance/nmap/v3"><img src="https://pkg.go.dev/badge/github.com/analog-substance/nmap/v3" alt="PkgGoDev github.com/analog-substance/nmap/v3"></a>
+    <a href="https://goreportcard.com/report/github.com/analog-substance/nmap/v3">
+        <img src="https://goreportcard.com/badge/github.com/analog-substance/nmap/v3">
     </a>
-    <a href="https://github.com/Ullaakut/nmap/actions/workflows/build.yml">
-        <img src="https://github.com/Ullaakut/nmap/actions/workflows/build.yml/badge.svg">
+    <a href="https://github.com/analog-substance/nmap/actions/workflows/build.yml">
+        <img src="https://github.com/analog-substance/nmap/actions/workflows/build.yml/badge.svg">
     </a>
-    <a href="https://github.com/Ullaakut/nmap/actions/workflows/test.yml">
-        <img src="https://github.com/Ullaakut/nmap/actions/workflows/test.yml/badge.svg">
+    <a href="https://github.com/analog-substance/nmap/actions/workflows/test.yml">
+        <img src="https://github.com/analog-substance/nmap/actions/workflows/test.yml/badge.svg">
     </a>
-    <a href='https://coveralls.io/github/Ullaakut/nmap'>
-        <img src='https://coveralls.io/repos/github/Ullaakut/nmap/badge.svg' alt='Coverage Status' />
+    <a href='https://coveralls.io/github/analog-substance/nmap'>
+        <img src='https://coveralls.io/repos/github/analog-substance/nmap/badge.svg' alt='Coverage Status' />
     </a>
 
 <p>
@@ -59,7 +59,7 @@ import (
     "log"
     "time"
 
-    "github.com/Ullaakut/nmap/v3"
+    "github.com/analog-substance/nmap/v3"
 )
 
 func main() {
