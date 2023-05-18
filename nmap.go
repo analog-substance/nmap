@@ -26,6 +26,7 @@ type Scanner struct {
 
 	args       []string
 	binaryPath string
+	sudoPath   string
 	ctx        context.Context
 
 	portFilter func(Port) bool
@@ -113,8 +114,14 @@ func (s *Scanner) Run() (result *Run, warnings *[]string, err error) {
 		args = append(args, "-oX", "-")
 	}
 
+	binaryPath := s.binaryPath
+	if s.sudoPath != "" {
+		args = append([]string{binaryPath}, args...)
+		binaryPath = s.sudoPath
+	}
+
 	// Prepare nmap process.
-	cmd := exec.CommandContext(s.ctx, s.binaryPath, args...)
+	cmd := exec.CommandContext(s.ctx, binaryPath, args...)
 	if s.modifySysProcAttr != nil {
 		s.modifySysProcAttr(cmd.SysProcAttr)
 	}

@@ -1,6 +1,10 @@
 package nmap
 
-import "syscall"
+import (
+	"os/exec"
+	"runtime"
+	"syscall"
+)
 
 // WithIPv6Scanning enables the use of IPv6 scanning.
 func WithIPv6Scanning() Option {
@@ -51,6 +55,18 @@ func WithSendIP() Option {
 func WithPrivileged() Option {
 	return func(s *Scanner) {
 		s.args = append(s.args, "--privileged")
+	}
+}
+
+// WithSudo sets the scanner to run as root using the sudo command. *Nix only.
+func WithSudo() Option {
+	return func(s *Scanner) {
+		if runtime.GOOS != "windows" {
+			sudoPath, _ := exec.LookPath("sudo")
+			if sudoPath != "" {
+				s.sudoPath = sudoPath
+			}
+		}
 	}
 }
 
